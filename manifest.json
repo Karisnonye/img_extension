@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "img_bg",
+    "description": "Add a custom background to chrome tabs",
+    "version": "1.0",
+    "permissions": ["activeTab"],
+    "icons": {
+        "16": "/images/eyes1.png",
+        "48": "/images/eyes6.png",
+        "128": "/images/eyes3.png"
+    },
+    "action": {
+        "default_icon": {
+            "16": "/images/eyes4.png",
+            "48": "/images/eyes5.png",
+            "128": "/images/eyes6.png"
+        }
+    },
+    "content_scripts": [{
+        "matches": ["https://www.google.com/*"],
+        "css": ["main.css"]
+    }]
+
+
+}
